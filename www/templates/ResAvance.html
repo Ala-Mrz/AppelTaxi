@@ -1,0 +1,38 @@
+ <ion-view view-title="Réservation a l'avance"  ng-app="starter"  LoggedIn()>
+
+      <ion-content  ng-controller="MyCtrl">
+       <div class="border">
+
+</br><label>Adresse de départ:</label></br>
+
+      <ion-google-place class="place"  placeholder="Entrez votre adresse de départ"  name="addressDepart"  location-changed="locationChanged" ng-model="ResAvance.Adressdepart" id='start'/></ion-google-place>
+             <label class="item-input item-floating-label">
+</label></br></br>
+<label>Adresse de destination:</label>
+      <ion-google-place class="place"  placeholder="Entrez votre adresse de destination" name="addressDestination"  location-changed="locationChanged" ng-model="ResAvance.Adressdest" id='end'/>
+      </ion-google-place>       <label class="item-input item-floating-label">
+</label></br></br>
+   <label>Date de Reservation:</label>
+    <input type="Date" class="dateTime" ng-model="ResAvance.dateReservation" >
+
+       <label class="item-input item-floating-label">
+</label></br></br>
+  <label>Heure de départ:</label>
+    <input type="time" class="dateTime" ng-model="ResAvance.heure">
+ 
+       <label class="item-input item-floating-label">
+</label>
+</br></br>
+  <button class="button button-block " ng-click="calcRoute()" >Suivant</button>
+
+</div>
+<div class="button-bar bar-dark">
+  <a class="button" id="duration">dureé</a>
+  <a class="button" id="distance">distance</a>
+  <a class="button"id="Tarif">Tarif</a>
+</div>
+
+    </ion-content>
+
+</ion-view>
+

@@ -1,0 +1,102 @@
+
+
+<ion-header-bar class="bar-energized">
+    <h1 class="title">Inscription</h1>
+
+  </ion-header-bar>
+
+
+<ion-content>
+
+ <div class="border">
+ <form>
+  
+ <label class="lab"> TYPE UTILISATEUR :</label>
+
+
+  <div style="text-indent: 20px">
+    <input type="radio"   id="f-option" name="g1" ng-model="userpas.groupe_id"   value=1>
+    <label for="f-option"  >PASSAGER</label>
+    <div class="check"></div></div>
+
+
+  
+  <div style="text-indent: 20px">
+    <input type="radio" id="t-option" name="g1"  ng-model="userpas.groupe_id"   value=2>
+    <label for="t-option" class="lab2">CHAUFFEUR</label>
+    <div class="check"></div></div>
+
+  <div style="text-indent: 20px">
+    <input type="radio" id="s-option" name="g1" ng-model="userpas.groupe_id"   value=3>
+    <label for="s-option" >PROPRIETAIRE DE TAXI </label>
+    <div class="check"></div></div>
+<br/>
+<label class="item-input item-floating-label">
+</label>
+
+ <label class="item-input item-floating-label">
+    <span class="input-label">Nom:</span>
+    <input type="text" placeholder="Nom" ng-model="userpas.nom" >
+ </label>
+ <label class="item-input item-floating-label">
+    <span class="input-label">Prénom:</span>
+    <input type="text" placeholder="Prénom"  ng-model="userpas.prenom">
+  </label>
+   <label class="item-input item-floating-label">
+    <span class="input-label">Télephone:</span>
+    <input type="tel" placeholder="Télephone"  ng-model="userpas.telephone">
+  </label> 
+  <label class="item-input item-floating-label">
+    <span class="input-label">Email:</span>
+    <input type="Email" placeholder="Email" ng-model="userpas.email" >
+  </label> 
+  <label class="item-input item-floating-label">
+    <span class="input-label">Permis:</span>
+    <input type="text" placeholder="Permis" ng-model="userpas.permis"  >
+  </label>
+    </label> <label class="item-input item-floating-label">
+    <span class="input-label">Date de naissence:</span>
+
+     <input id="input-date" type="date"  placeholder="Date de naissence"   ng-model="userpas.dateNaissance">
+
+  </label>
+ </label><br/>
+ <label class="lab">SEXE:  </label>
+ <div class="row"  >
+<div style="text-indent: 20px">
+   <input type="radio" id="homme" name="g2" ng-model="userpas.sexe" value="homme"  >
+    <label for="f-option">   HOMME</label>
+    <div class="check"></div></div>
+
+  
+<div style="text-indent: 20px">
+    <input type="radio" id="Femme" name="g2"  ng-model="userpas.sexe" value="femme" >
+
+    <label for="s-option">FEMME </label>
+    <div class="check" ></div></div> 
+
+ <br/></div>
+
+
+ <label class="item-input item-floating-label">
+</label>
+ <label class="item-input item-floating-label">
+    <span class="input-label"> Mot de passe:</span>
+    <input type="password" placeholder="Mot de passe"  name="p1" ng-model="userpas.password"  ></label>
+  <label class="item-input item-floating-label">
+    <span class="input-label"> Confirmer votre mot de passe:</span>
+    <input type="password" placeholder="Confirmer votre mot de passe"  name="p1" ng-model="pass.password"  ></label>
+ 
+
+
+
+<button class="button button-block " ng-click="doResgister()">
+Inscription
+</button>
+
+<button class="button button-block " ui-sref="login">
+Annuler
+</button>
+</div>  </ion-content>
+   </form>   
+</ion-view>

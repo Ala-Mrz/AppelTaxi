@@ -1,0 +1,30 @@
+
+<ion-view view-title="Liste des Affectations" >
+ <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-plus" ui-sref="app.Affectation">
+        </button>
+         <button class="button button-icon button-clear ion-refresh" ng-click="getAffectation()">
+      
+        </button>
+      </ion-nav-buttons>
+<ion-content >
+<a class="item item-thumbnail-left" ng-repeat="item in listeAffect" >
+  
+     <div class="row">Nom:<h2>{{item.nom}}</h2></div>
+      <div class="row">Prenom:<h2>{{item.prenom}} </h2></div>
+      
+     <div class="row">Téléphone:<h2>{{item.telephone}}</h2></div>
+      <div class="row">Date  debut affectation:<h2>{{item.dateAffect}} </h2></div>
+      
+     <div class="row">Date fin affectation:<h2>{{item.dateFinAffect}}</h2></div>
+      <div class="row">heure affectation:<h2>{{item.heureDebut}} </h2></div>
+      <div class="row">heure fin  affectation:<h2>{{item.heureFin}} </h2></div>
+       <div class="row">Matricule:<h2>{{item.matricule}} </h2></div>
+ 
+      <button class="icon ion-gear-a" ng-click="ModifierAffect(item)"></button>
+    <button class="icon ion-trash-a "ng-click="ModifierAffect(item)"></button>
+    </a>
+
+
+</ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+
+<ion-view view-title="Liste des taxi" >
+ <ion-nav-buttons side="right">
+    
+        </button>
+      </ion-nav-buttons>
+<ion-content class="slide-in-both-ways">
+<form>
+<a class="item item-thumbnail-left" ng-repeat="item in listeTaxiAFF" ng-click='TaxiSelect(item)' >
+  
+     <div class="row">nombre de place:<h2>{{item.numPlace}}</h2></div>
+      <div class="row">Matricule:<h2>{{item.matricule}} </h2></div>
+      <div class="row">Modele:<h2>{{item.model}}</h2 ></div>
+  
+    </a>
+
+</form>
+</ion-content>
+</ion-view>

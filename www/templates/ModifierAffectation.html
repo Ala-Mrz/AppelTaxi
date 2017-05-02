@@ -1,0 +1,45 @@
+
+<ion-view view-title="Modifier Affectation" >
+
+<ion-content>
+<div class="border"> 
+<form>
+
+ 
+<h4>Taxi:</h4>
+<label class="item item-input">
+     
+          <input type="text" ng-model='Affect.matricule' ui-sref="app.ListeDETaxiAffect" >
+        </label>
+
+<br/>
+<h4>Chauffeur:</h4>
+<label class="item item-input">
+   
+          <input type="text" ng-model='Affect.nom' ui-sref="app.ListeDEUserAffect">
+        </label>
+<br/>
+<h4>Date debut d'affectation:</h4>
+<label class="item item-input">
+    <input type="date" class="dateTime" ng-model='Affect.dateAffect' ng-change="datatime" >
+     </label>
+
+<label class="item item-input">
+<input type="time" class="dateTime" ng-model='Affect.dateFinAffect' >
+ </label><br/><br/>
+<h4> Date fin d'affectation:</h4>
+
+<label class="item item-input">
+    <input type="date" class="dateTime" ng-model='Affect.heureDebut'>
+     </label>
+
+<label class="item item-input">
+<input type="time" class="dateTime"ng-model='Affect.heureFin'>
+ </label>
+ </br></br>
+  <button class="button button-block " ng-click='AjoutAffect()'>Enregistrer</button>
+
+
+
+</form>
+</div></ion-content>

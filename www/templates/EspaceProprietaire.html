@@ -1,0 +1,22 @@
+
+<ion-view view-title="Espace Proprietaire de taxi"  >
+
+	<ion-content>
+  <br/>
+ <label class="item-input item-floating-label">
+    <center><button class="buttonAff"  ui-sref="app.ListeAffectation"></button></center>
+    <center>Gestion d'Affectation</center></label><br/><br/>
+   
+
+ <label class="item-input item-floating-label">
+    <center><button class="buttontaxi"   ui-sref="app.ListeTaxi"></button></center>
+    <center>Liste des taxis</center></label><br/><br/>
+    
+     <label class="item-input item-floating-label">
+    <center><button class="buttonStati"  ng-click="getTaxi()" ng-controller="ListeTaxiCtrl"></button></center>
+    <center>Statistique</center></label>
+  
+    
+
+	</ion-content>
+   </ion-view>

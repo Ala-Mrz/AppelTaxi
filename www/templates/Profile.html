@@ -1,0 +1,24 @@
+<ion-view view-title="Profile" >
+ <ion-nav-buttons side="right">
+        
+         <button class="button button-icon button-clear ion-edit" ui-sref="app.ModifierProfile">
+      
+        </button>
+      </ion-nav-buttons>
+<ion-content >
+<div class="border"> 
+<form>
+        <img src="img/logo.png" class="img">
+         <label class="item-input item-floating-label"></label>
+        
+         <h4>Nom:</h4>{{user.nom}}
+         <h4>Prenom:</h4><p>{{user.prenom}}</p>
+         <h4>Email:</h4><p>{{user.email}}</p>
+         <h4>Date Naissance:</h4><p>{{user.dateNaissance|date: "MM-dd-yyyy"}}</p>
+            <h4>Telephone:</h4>  <p >{{user.telephone}}</p>
+         <h4>Sexe:</h4><p>{{user.sexe}}</p>
+         <h4>Permis:</h4><p>{{user.permis}}</p>
+</form>
+</div>
+</ion-content>
+</ion-view>

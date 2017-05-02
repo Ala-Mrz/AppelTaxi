@@ -1,0 +1,22 @@
+
+<ion-view view-title="Liste des taxi" >
+ <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-plus" ui-sref="app.AjoutTaxi">
+        </button>
+         <button class="button button-icon button-clear ion-refresh" ng-click="getTaxi()">
+      
+        </button>
+      </ion-nav-buttons>
+<ion-content >
+<a class="item item-thumbnail-left" ng-repeat="item in listeTaxi" >
+  
+     <div class="row"><h3>nombre de place:</h3><h2>{{item.numPlace}}</h2></div>
+      <div class="row"><h3>Matricule:</h3><h2>{{item.matricule}} </h2></div>
+      <div class="row"><h3>Modele:</h3><h2>{{item.Modele}}</h2 ></div>
+      <button class="icon ion-gear-a" ng-click="ModifierTaxi(item)"></button>
+    <button class="icon ion-trash-a "ng-click="deleteTaxi(item)"></button>
+    </a>
+
+
+</ion-content>
+</ion-view>

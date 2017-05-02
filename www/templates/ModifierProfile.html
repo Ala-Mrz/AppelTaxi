@@ -1,0 +1,69 @@
+
+<ion-view view-title="Modifier Profile" >
+
+<ion-content>
+<div class="border"> 
+<form>
+
+
+ <label class="item-input item-floating-label">
+    <span class="input-label">Nom:</span>
+    <input type="text" placeholder="Nom" ng-model="user.nom" >
+ </label>
+ <label class="item-input item-floating-label">
+    <span class="input-label">Prénom:</span>
+    <input type="text" placeholder="Prénom"  ng-model="user.prenom">
+  </label>
+   <label class="item-input item-floating-label">
+    <span class="input-label">Télephone:</span>
+    <input type="tel" placeholder="Télephone"  ng-model="user.telephone">
+  </label> 
+  <label class="item-input item-floating-label">
+    <span class="input-label">Email:</span>
+    <input type="Email" placeholder="Email" ng-model="user.email" >
+  </label> 
+  <label class="item-input item-floating-label">
+    <span class="input-label">Permis:</span>
+    <input type="text" placeholder="Permis" ng-model="user.permis"  >
+  </label>
+    </label> <label class="item-input item-floating-label">
+    <span class="input-label">Date de naissence:</span>
+    <input type="text" placeholder="Date de naissence"   ng-model="user.dateNaissance"    >
+ 
+ </label><br/>
+
+ <label class="lab">SEXE:  </label>
+ <div class="row"  >
+<div style="text-indent: 20px">
+   <input type="radio" id="homme" name="g2" ng-model="user.sexe" value="homme"  >
+    <label for="f-option">   HOMME</label>
+    <div class="check"></div></div>
+
+  
+<div style="text-indent: 20px">
+    <input type="radio" id="Femme" name="g2"  ng-model="user.sexe" value="femme" >
+
+    <label for="s-option">FEMME </label>
+    <div class="check" ></div></div> 
+
+ <br/></div>
+
+
+ <label class="item-input item-floating-label">
+</label>
+ <label class="item-input item-floating-label">
+    <span class="input-label"> Mot de passe:</span>
+    <input type="password" placeholder="Mot de passe"  name="p1" ng-model="user.password"  ></label>
+ 
+
+
+<button class="button button-block " ng-click="putuser()">
+Enregistrer
+</button>
+
+<button class="button button-block " ui-sref="login">
+Annuler
+</button></form>
+</div>  </ion-content>
+      
+</ion-view>

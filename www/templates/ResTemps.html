@@ -1,0 +1,53 @@
+
+<ion-view view-title="Réservation en temps reél">
+ <ion-nav-buttons side="right">
+  <button class="button button-icon button-clear ion-model-s" ng-click="getTaxiDisponible()">
+        </button>
+   </ion-nav-buttons>
+   <ion-content  ng-controller="MarkerRemoveCtrl" scrolle="true">
+
+    
+     <div class="mapWrap"  data-tap-disabled="true">
+        <map center="33.3321298,10.4805433" zoom="15"> 
+          <!-- ngRepeat: pos in positions -->
+   
+  <div ng-repeat="Taxi in listeTaxi" >
+  <marker position="{{Taxi.latitude}},{{Taxi.longitude}}"        on-click="showTaxi(event, Taxi)" icon="https://lh6.ggpht.com/PlOYwFUbxZch6H9qdKslCwgFzy8xUGjhjZBoqMwLCGND6jWEZj2xnVAQycaoHq6xKqk=w50"   >    
+   </marker>
+      </div>
+         <info-window id="myInfoWindow">
+    <some-html>
+   <img src="img/iconTaxi.png" class="img">
+           <h4>{{selectedTaxi.nom}} {{selectedTaxi.prenom}} </h4> 
+           <!--button class="AjoutContact" ng-click="doLogin()"></button-->
+        <label class="item-input item-floating-label"></label>
+        telephone: <a >{{selectedTaxi.telephone}}</a><br/>
+        Matricule:{{selectedTaxi.matricule}}<br/>
+        Nombre de place:{{selectedTaxi.numPlace}}<br/>
+        climatiser:{{selectedTaxi.climatiser}}<br/>
+        Animaux:{{selectedTaxi.Animaux}}<br/>
+        Bagage:{{selectedTaxi.Bagage}}<br/>
+           <label class="item-input item-floating-label"></label>
+        <form>
+       
+          <button class="buttonres button-block " ng-click="Reservation(selectedTaxi)">Reserver</button>
+        </form>
+    </some-html>
+    </info-window>   
+     </map> 
+
+
+
+
+<div class="button-bar bar-dark">
+  <a class="button"  id="duration">dureé</a>
+  <a class="button" id="distance">distance</a>
+  <a class="button"id="Tarif">Tarif</a>
+
+
+</div>
+ 
+      </div>
+  </ion-content>
+</ion-view>
+</ion-view>

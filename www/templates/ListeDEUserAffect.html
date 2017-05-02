@@ -1,0 +1,19 @@
+
+<ion-view view-title="Liste des Chauffeur" >
+ <ion-nav-buttons side="right">
+    
+        </button>
+      </ion-nav-buttons>
+<ion-content >
+<form>
+<a class="item item-thumbnail-left" ng-repeat="item in listeUserAFF" ng-click='UserSelect(item)' >
+  
+     <div class="row">Nom: <h2> {{item.nom}}</h2></div>
+      <div class="row">Prenom: <h2> {{item.prenom}} </h2></div>
+      <div class="row">Téléphone: <h2> {{item.telephone}}</h2 ></div>
+    <div class="row">Email: <h2> {{item.email}}</h2 ></div>
+    </a>
+
+</form>
+</ion-content>
+</ion-view>

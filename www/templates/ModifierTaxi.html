@@ -1,0 +1,45 @@
+<ion-view view-title="Modifier Taxi">
+<ion-content>
+<div class="border"> 
+<form>
+
+   <label class="item item-input">
+          <span class="input-label">Nombre de place</span>
+          <input type="number" ng-model="taxi.numPlace">
+        </label>
+
+
+<label class="item item-input">
+          <span class="input-label">Matricule</span>
+          <input type="text" ng-model="taxi.matricule">
+        </label>
+<label class="item item-input">
+          <span class="input-label">Modele</span>
+          <input type="text" ng-model="taxi.model">
+        </label>
+ <br/>
+ <label>OPTION:</label>
+<ul><div style="text-indent: 20px">
+    <input type="checkbox" name="Animaux" ng-model="taxi.Animaux" >
+    Animaux  
+    </div>
+   <ul>
+    <div style="text-indent: 20px">
+    <input type="checkbox" id="Climatiser" ng-model="taxi.climatiser"  >
+    Climatiser
+    <div  ></div></div> </ul>
+    <ul>
+    <div style="text-indent: 20px">
+    <input type="checkbox" id="Bagage" ng-model="taxi.Bagage"  >
+    Bagage
+    <div  ></div></div> 
+    </ul>
+
+<br/><br/>
+<button class="button button-block " ng-click="putTaxi()">
+Enregistrer
+</button>
+</div>
+ </div></form>
+</ion-content>ModifierTaxi
+</ion-view>

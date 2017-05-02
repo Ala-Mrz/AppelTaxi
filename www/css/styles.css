@@ -1,0 +1,309 @@
+
+.border{
+	padding: 15px;
+}
+.img
+{
+	   display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.place {
+border: 0px;
+
+		font-size:14px;
+	padding: 2px;
+
+
+
+}
+.barMap{
+	background:#535353;
+	color:white;
+}
+
+
+
+.dateTime{
+font-size:14px;
+padding: 0px;
+width: 100%;
+}
+
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.item-input {
+width:100%;
+	border-bottom: 1px solid #E9E8E8;
+}
+.button{
+
+	background: #FFAF00;
+	color: white;
+
+}
+.button:hover{
+
+	background: white;
+	color: #FFAF00;
+	
+}
+.info-window{
+	background:  #616161;
+}
+.buttonres{
+
+	background: #616161;
+	color: white;
+	border: white;
+
+}
+.buttonres:hover{
+
+	background: white;
+	color: #616161;
+	border:white;
+	
+}
+.bselect{
+	padding-left: 20px;
+
+}
+.select1{
+
+	width: 95px;
+	font-size: 11px;
+	  background-color: rgba(255,255, 255, 0.1);
+	  color:  white   ;
+
+}
+
+.op1{
+	font-size: 11px;
+	color: #DA0004;
+}
+.op2{font-size: 11px;
+	color: #00CB4B;
+}
+.op3{font-size: 11px;
+	color: #E3E9E6;
+}
+.op1:before{
+color: #DA0004;	
+
+
+
+}
+/*input[type=radio]:checked ~ .check::before{
+  background:  #ffc900; 
+
+}
+
+input[type=radio]:checked ~ label{
+  color:  #ffc900;}*/
+.ion-reply-all{
+
+ font-size:30px;
+
+}
+.ion-reply-all:hover{
+background: black;
+	
+	color: black;
+	
+}
+.AjoutContact	{
+	padding: 16px;
+	width: 16px;
+	border: white;
+		margin-right: auto;
+margin-left: auto;
+	background: url("../img/20437.png") no-repeat scroll 0 0 transparent;;
+}
+.buttonAdmin{
+
+	border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 20px;
+	background: url("../img/Admin.png") no-repeat scroll 0 0 transparent;;
+}
+.buttonAffectation{
+
+	border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 20px;
+	background: url("../img/affectation.jpg") no-repeat scroll 0 0 transparent;;
+}
+.buttonAvance{
+	border :white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 20px;
+	background: url("../img/1459717800_calendar.png") no-repeat scroll 0 0 transparent;;
+}
+.buttonTemps{
+	border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 20px;
+	background: url("../img/Clock - Time.png") no-repeat scroll 0 0 transparent;;
+}
+
+
+.buttonHistorique{
+border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 20px;
+	background: url("../img/1459720968_document-open-recent.png") no-repeat scroll 0 0 transparent;;
+}
+
+.buttonPassager{
+border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 20px;
+	background: url("../img/1459732689_user_accounts.png") no-repeat scroll 0 0 transparent;;
+}
+.buttonChauffeur{
+border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 20px;
+	background: url("../img/ch.png") no-repeat scroll 0 0 transparent;;
+}
+.buttonPropritaire{
+border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 50px;
+	background: url("../img/proprietaire-de-votre-site.png") no-repeat scroll 0 0 transparent;;
+}
+.buttonListeRes{
+border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 50px;
+	background: url("../img/1459741818_Todo.png") no-repeat scroll 0 0 transparent;;
+}
+.buttonMap{
+border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 50px;
+	background: url("../img/map.png") no-repeat scroll 0 0 transparent;;
+}
+.buttonRevenu{
+border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 70px;
+	width: 50px;
+	background: url("../img/1459742862_wallet.png") no-repeat scroll 0 0 transparent;;
+}
+select{
+border-bottom: 1px solid #E9E8E8;
+	font-size: 18px;
+	border:white;
+	width :40%;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+#map_canvas { width: 100%; height: 100% }
+.ion-list
+label{
+	font-size: 15px;
+}
+.s-option{
+font-size:10 
+}
+
+
+
+
+.buttonAff{
+border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 65px;
+	width: 50px;
+	background: url("../img/aff.png") no-repeat scroll 0 0 transparent;;
+}
+.buttontaxi{
+border:white;
+margin-right: auto;
+margin-left: auto;
+	padding: 65px;
+	width: 50px;
+	background: url("../img/proprietaire-de-votre-site.png") no-repeat scroll 0 0 transparent;
+	}
+
+
+
+
+.buttonStati{
+border:white;
+	margin-right: auto;
+margin-left: auto;
+	padding: 80px;
+	width: 50px;
+	background: url("../img/stat.png") no-repeat scroll 0 0 transparent;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+map {
+  width: 100%;
+  height: 93% !important;
+}
+
+.scroll, .mapWrap {
+  height: 100%;
+}
+
+
+.row{
+	 width: 350px;  
+  }
+
+
+input[type=radio]:checked ~ .check::before{
+  background:  #ffc900; 
+
+}
+
+input[type=radio]:checked ~ label{
+  color:  #ffc900;}
+
+
+
+
